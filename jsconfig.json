@@ -1,0 +1,20 @@
+{
+   "compilerOptions": {
+      // Use modern Node.js module resolution for ESM. This is critical.
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "target": "ES2022",
+
+      // Enable JSDoc type-checking
+      "checkJs": true,
+
+      // Allows for non-relative imports (e.g., 'types/lmarena' instead of '../../types/lmarena')
+      "baseUrl": ".",
+      "paths": {
+         "types/*": ["types/*"]
+      }
+   },
+   // Explicitly tell the server to include your .d.ts files in the project context
+   "include": ["**/*.js", "**/*.d.ts"],
+   "exclude": ["node_modules"]
+}
